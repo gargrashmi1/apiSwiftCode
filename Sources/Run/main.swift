@@ -33,12 +33,8 @@ drop.get { req in
     return try drop.view.make("Welcome",[
         "message": "Welcome"])
 }
+
 try drop.run()
 
-/*
- var options = try! Options(topic: "<your topic>", teamId: "<your teamId>", keyId: "<your keyId>", keyPath: "<your path to key>")
- options.forceCurlInstall = true
- 
- */
 
 
