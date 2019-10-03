@@ -18,6 +18,7 @@ struct TwilioManager {
         guard let
             fromPhone = ProcessInfo.processInfo.environment["TWILIO_FROM"]
         else { TwilioManager.log?.error("SMS FAIL: Missing FROM"); return nil }
+        print("******* twilio sid", sid)
         self.sid = sid
         self.token = token
         self.fromPhone = fromPhone
